@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var Fedya;
+		var Senya;
+		function Game() {
+			do { 
+			
+			var Fedya = prompt("Fedya enters a number from 0 to 100", 0);
+			Fedya = parseInt(Fedya);
+			
+			if(Fedya <= 100) {
+				Senya = prompt ("Senya guess the number from up to 100", 0);
+			}
+			if(Senya < Fedya) {
+				alert("Senya, number must be greater");
+			}
+
+			if(Senya > Fedya) {
+				alert("Senya, number must be less");
+			}
+
+			if(Senya == Fedya) {
+				alert ('Senya, you win');
+			}
+		
+			var Senya = prompt("Senya enters a number from 0 to 100", 0);
+			Senya = parseInt(Senya);
+			if(Senya <= 100) {
+				Fedya = prompt ("Fedya guess the number from up to 100", 0);
+			}
+			if(Fedya < Senya) {
+				alert("Fedya, number must be greater");
+			}
+
+			if(Fedya > Senya) {
+				alert("Fedya, number must be less");
+			}
+
+			if(Fedya == Senya) {
+				alert ('Fedya, you win');
+			}
+
+			} while (Fedya != Senya);
+		}
+		Game();		
+
+	
+
+	</script>
+</body>
+</html>
